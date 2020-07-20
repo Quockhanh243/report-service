@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: report-service
+  cloud:
+    config:
+      fail-fast: true
+      uri: http://localhost:8888
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
